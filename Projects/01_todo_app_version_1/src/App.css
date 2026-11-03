@@ -1,0 +1,106 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+/* ===== Page wrapper ===== */
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ===== Heading ===== */
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(1.6rem, 4vw, 2.4rem); /* scales with screen */
+  color: #1f2a44;
+}
+
+/* ===== Rows (add form + todo items) ===== */
+.container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.row {
+  align-items: center;
+  row-gap: 10px;
+}
+
+/* ===== Inputs ===== */
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccd2dc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #198754;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.2);
+}
+
+/* ===== Buttons ===== */
+.btn-solid {
+  width: 100%;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-solid:active {
+  transform: scale(0.97); /* press effect */
+}
+
+.theme-success {
+  background: #198754;
+}
+.theme-success:hover {
+  background: #146c43;
+}
+
+.theme-danger {
+  background: #dc3545;
+}
+.theme-danger:hover {
+  background: #b02a37;
+}
+
+/* ===== Tablet and below ===== */
+@media (max-width: 768px) {
+  #root {
+    padding: 16px 10px;
+  }
+}
+
+/* ===== Mobile: stack columns full width ===== */
+@media (max-width: 576px) {
+  .row > [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container {
+    padding: 14px 10px;
+  }
+}
