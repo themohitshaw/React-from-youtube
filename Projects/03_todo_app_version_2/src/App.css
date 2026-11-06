@@ -1,0 +1,25 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+/* ===== Page wrapper ===== */
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+/* ===== Tablet and below ===== */
+@media (max-width: 768px) {
+  #root {
+    padding: 16px 10px;
+  }
+}
+
