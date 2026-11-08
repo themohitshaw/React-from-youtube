@@ -1,0 +1,14 @@
+.ulTag{
+    color: rgb(198, 41, 41);
+    background-color: white;
+}
+
+.liTag{
+    color: rgb(198, 41, 41) ;
+    background-color: white;
+    background-color: rgb(190, 184, 184);
+    margin: 4px;
+}
+.button{
+    float: right;
+}
