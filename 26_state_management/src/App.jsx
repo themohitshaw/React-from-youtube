@@ -4,8 +4,6 @@ import Container from "./components/Container"
 
 import Heading from "./components/Heading"
 import FoodItems from "./components/FoodItems"
-// import Description from "./components/Description"
-
 import InputItem from "./components/InputItem"
 import { useState } from "react"
 
@@ -29,14 +27,8 @@ function App(){
     <Heading></Heading>
     <InputItem onchange={onchange}></InputItem>
     <p>{textToShow}</p>
-    <FoodItems fooditems = {foods}></FoodItems>
+    <FoodItems foods = {foods}></FoodItems>
   </Container>
-
-  {/* <Container>
-    <Description></Description>
-  </Container> */}
-
-  
   </>
 }
 export default App
